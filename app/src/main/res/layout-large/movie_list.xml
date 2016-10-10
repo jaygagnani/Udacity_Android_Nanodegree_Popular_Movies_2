@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:showDividers="middle"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="440dp"
+        android:layout_height="match_parent">
+
+        <GridView
+            android:id="@+id/movie_list_grid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:numColumns="2" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/sort_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/ic_menu_sort_by_size"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentBottom="true"
+            android:layout_alignEnd="@id/movie_list_grid"
+            android:layout_alignRight="@id/movie_list_grid"
+            android:layout_margin="20dp"/>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/movie_details_frame"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"/>
+
+</LinearLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Popular Movies 2</string>
+    <string name="title_activity_movie_details">MovieDetailsActivity</string>
+
+    <string name="action_settings">Settings</string>
+
+</resources>
