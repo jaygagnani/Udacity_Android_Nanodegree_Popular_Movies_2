@@ -19,16 +19,41 @@
             android:layout_height="match_parent"
             android:numColumns="2" />
 
-        <android.support.design.widget.FloatingActionButton
-            android:id="@+id/sort_fab"
+        <com.github.clans.fab.FloatingActionMenu
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:id="@+id/sort_fab_menu"
             app:srcCompat="@android:drawable/ic_menu_sort_by_size"
             android:layout_alignParentTop="false"
             android:layout_alignParentBottom="true"
             android:layout_alignEnd="@id/movie_list_grid"
             android:layout_alignRight="@id/movie_list_grid"
-            android:layout_margin="20dp"/>
+            android:layout_margin="20dp"
+            app:menu_icon="@android:drawable/ic_menu_sort_by_size"
+            app:menu_labels_colorNormal="@android:color/darker_gray">
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/popular_sort_fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_size="mini"
+                app:fab_label="Popular"/>
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/top_rated_sort_fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_size="mini"
+                app:fab_label="Top Rated"/>
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/favourite_sort_fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_size="mini"
+                app:fab_label="Favourite"/>
+
+        </com.github.clans.fab.FloatingActionMenu>
 
     </RelativeLayout>
 
